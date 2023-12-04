@@ -1,0 +1,85 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.RegisterListViewModel
+
+<br />
+
+<div class="row pt-4">
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">Register for Weekly Meetings</h2>
+        <br />
+        <form>
+            <h5 style="color:#444444">
+                Start Date: <input type="date" asp-for="StartDate" class="dp-custom" />
+            </h5>
+
+            <h5 style="color:#444444">
+                End Date: <input type="date" asp-for="EndDate" class="dp-custom" />
+            </h5>
+            <input class="btn btn-primary" type="submit" value="Filter by Date" />
+        </form>
+    </div>
+
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="ExportRegisterInExcel">Download Register to Excel</a>
+
+    </div>
+
+</div>
+
+<br />
+
+<div class="table-responsive">
+    <!--Table that displays the products saved in the database-->
+    <table class="tableSlide" style="width:100%">
+        <!--Table headings-->
+        <thead>
+            <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                    Meeting Date
+                </th>
+
+            <th style ="text-align: center; vertical-align: middle;">
+                    Who Attended
+                </th>
+            </tr>
+        </thead>
+        
+        @if (Model != null && Model.Registers != null && Model.Registers.Any())
+        {
+        <!--Table body-->
+        <tbody>
+        @foreach (var register in Model.Registers)
+        {
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle;">
+                    @register.AttendanceDateStr
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                    @register.MeetingAttendance
+                        </td>
+                    </tr>
+        }
+        </tbody>
+
+        }
+        else
+        {
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" colspan="2">No Previously Saved Attendance Registers</td>
+            </tr>
+        }
+    </table>
+    </div>
+
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

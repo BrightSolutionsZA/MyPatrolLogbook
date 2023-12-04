@@ -1,0 +1,35 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<h1 style="color:#444444">@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+<a id="confirm-link" href="@Model.EmailConfirmationUrl" class="btn btn-primary">Click here to confirm your account</a>
+</p>
+    }
+    else
+    {
+        <p style="color:#444444">
+        Please check your email to confirm your account.
+</p>
+    }
+}
+
+
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

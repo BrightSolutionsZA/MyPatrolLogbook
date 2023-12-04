@@ -1,0 +1,109 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<br />
+<h1 style="color:#444444">@ViewData["Title"]</h1>
+<hr />
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label>Email *</label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" type="email" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label>Password *</label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" type="password" id="passwordInput"/>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+
+                <!-- An element to toggle between password visibility -->
+
+                <div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" onclick="myPasswordFunction()" class="form-check-input" />
+                            Show Password
+                        </label>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div>
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-secondary">Log in</button>
+                </div>
+                <br />
+                 <div>
+                <p>
+                    <a class="btn btn-primary" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Create New Account</a>
+                </p>
+                <p>
+                    <a class="btn btn-primary" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                </p>
+            </div>
+            </form>
+        </section>
+    </div>
+    <div class="col-md-7 text-end">
+        <section>
+
+
+            <table class="tableHome">
+                <tr>
+                    <td>
+                        <div class="image-container-cust-login">
+                            <!-- Your images here -->
+                            <div class="imageRef">
+
+                                <img src="/img/mplnobg.png" alt="Image of MyPatrolLogbook" class="img-fluid">
+                                <div class="cap">
+                                    Image Ref: Naidu, 2023
+                                </div>
+
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</div>
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

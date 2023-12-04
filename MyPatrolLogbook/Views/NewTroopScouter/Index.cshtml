@@ -1,0 +1,113 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.NewTroopScouterListViewModel
+
+<br />
+
+<div class="row pt-4">
+
+    <div class="text-center">
+        <h2 style="color:#444444">List of New Troop Scouters</h2>
+        <br />
+    </div>
+
+</div>
+
+<br />
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide2" style="width:100%">
+    <!--Table headings-->
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                SSA ID
+            </th>
+
+            <th style="text-align: center; vertical-align: middle;">
+                Troop Scouter Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Troop Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Email
+            </th>
+
+            <th style ="text-align: center; vertical-align: middle;"></th>
+        </tr>
+    </thead>
+    @if (Model != null && Model.TroopScouters != null && Model.TroopScouters.Any())
+        {
+    <!--Table body-->
+    <tbody>
+        @foreach (var user in Model.TroopScouters)
+        {
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @user.SSAID
+                        </td>
+
+                    <td style="text-align: center; vertical-align: middle;">
+                    @user.FirstName
+                    @user.LastName
+                </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @foreach (var troop in Model.Troops)
+                    {
+                        @if (user.TroopId == troop.TroopId.ToString())
+                        {
+                            @troop.TroopName
+                        }
+                    }
+                </td>
+
+                    <td style="text-align: center; vertical-align: middle;">
+                        @user.Email
+                    </td>
+
+                    <td style="text-align: center; vertical-align: middle;" width="30%">
+                    <!--Anchor Tags that redirects the user to a new page if it's been clicked-->
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="NewTroopScouter" asp-action="Confirm" asp-route-id="@user.Id"
+                       class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Confirm Troop Scouter</a>
+
+                        <a asp-controller="NewTroopScouter" asp-action="Delete" asp-route-id="@user.Id"
+                       class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Remove</a>
+                    </div>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+    }
+    else
+    {
+        <tr>
+            <td colspan="5" style="text-align: center; vertical-align: middle;">No New Troop Scouters</td>
+        </tr>
+    }
+</table>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust-newts">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/ts-removebg-preview.png" alt="Image of New Troop Scouters">
+                        <div class="cap">
+                            Image Ref: Shutterstock, n.d.
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

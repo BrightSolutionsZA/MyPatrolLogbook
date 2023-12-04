@@ -1,0 +1,27 @@
+﻿<!--Points to the model class-->
+@model MyPatrolLogbook.ViewModels.MyPatrolInformationListViewModel
+
+<br/>
+
+<!--Heading-->
+<h1 class="text-white bigColour">Please contact your Troop Scouter to assign you to your patrol!!</h1>
+
+<h3 style="color:#444444">You cannot continue until you have been assigned to a patrol!</h3>
+<!--Button that logs the user out of their account-->
+<form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/Identity/Account/Login" method="post">
+
+    <button type="submit" class="btn btn-primary">Okay</button>
+</form>
+
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

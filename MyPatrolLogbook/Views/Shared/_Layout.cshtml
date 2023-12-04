@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyPatrolLogbook</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/mplnobg.ico" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyPatrolLogbook.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #622599">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" asp-area="" asp-controller="Home" asp-action="Index">MyPatrolLogbook</a>
+                
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-light">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="HowToGuide">How To Guide</a>
+                        </li>
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Scout"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Patrol</a>
+                                <div class="dropdown-menu" style="background-color: #e7ded7">
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="MyPatrolInformation" asp-action="Index"><h6>Information</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Register" asp-action="Index"><h6>Weekly Attendance Register</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="PatrolInCouncil" asp-action="Index"><h6>Patrol In Councils</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Camp" asp-action="Index"><h6>Camps</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Hike" asp-action="Index"><h6>Hikes</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="CommunityService" asp-action="Index"><h6>Community Service Projects</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="PatrolActivity" asp-action="Index"><h6>Activities</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Evaluation" asp-action="Index"><h6>Evaluation</h6></a>
+                                </div>
+                            </li>
+
+                        }
+                       
+                        <!--The following nav-bar options are displayed only if the logged in user is not in a specific role-->
+                        @*@if (User.Identity.IsAuthenticated && !User.IsInRole("SuperUser") && !User.IsInRole("ProvincialAdmin") && !User.IsInRole("TroopScouter") && !User.IsInRole("Scout"))
+                        {
+                        <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Role" asp-action="Assign"><h6>Select a Role</h6></a>
+                        </li>
+
+                        }*@
+
+                        <!--The following nav-bar options are displayed only if the logged in user is a TS-->
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("TroopScouter"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Manage</a>
+                                <div class="dropdown-menu" style="background-color: #e7ded7">
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Patrol" asp-action="Index"><h6>Patrols</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="NewScout" asp-action="Index"><h6>New Scouts</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="CurrentScout" asp-action="Index"><h6>Current Scouts</h6></a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">View Patrol </a>
+                                <div class="dropdown-menu" style="background-color: #e7ded7">
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="PatrolInformationReadOnly"><h6>Information</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="RegisterReadOnly"><h6> Weekly Attendance Registers</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="CampReadOnly"><h6>Camps</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="HikeReadOnly"><h6>Hikes</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="CommunityServiceReadOnly"><h6>Community Service Projects</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="ScoutPatrolInformation" asp-action="PatrolActivityReadOnly"><h6>Activities</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Evaluation" asp-action="IndexTroopScouter"><h6>Evaluation Sheet</h6></a>
+                                </div>
+                            </li>
+                        }
+
+
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("ProvincialAdmin"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Manage</a>
+                                <div class="dropdown-menu" style="background-color: #e7ded7">
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="Troop" asp-action="Index"><h6>Troops</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="NewTroopScouter" asp-action="Index"><h6>New Troop Scouters</h6></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="nav-link text-dark dropdown-menu-item" asp-area="" asp-controller="CurrentTroopScouter" asp-action="Index"><h6>Current Troop Scouters</h6></a>
+                                </div>
+                            </li>
+                        }
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("SuperUser"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-light" asp-area="" asp-controller="Role" asp-action="Index">Manage Roles</a>
+                            </li>
+                        }
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More Resources</a>
+                            <div class="dropdown-menu" style="background-color: #e7ded7">
+                                <a class="nav-link text-dark dropdown-menu-item" href="https://www.scouts.org.za/"><h6>Official Scouts South Africa Website</h6></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="nav-link text-dark dropdown-menu-item" href="https://www.scouts.org.za/wp-content/uploads/2023/04/Star-Award-Recognition-Programme-2023-Patrol-and-Troop-Award-Guidelines-V.1-202303.pdf"><h6>Star Patrol Evaluation Guidelines</h6></a>
+                                <div class="dropdown-divider"></div>
+                                <a class="nav-link text-dark dropdown-menu-item" href="https://www.scouts.org.za/wp-content/uploads/2023/04/Star-Patrol-Award-2023-Assessment-Sheet-V.1-202303-PDF.pdf"><h6>Star Patrol Assessment Sheet</h6></a>
+                              <div class="dropdown-divider"></div>
+                                <a class="nav-link text-dark dropdown-menu-item" href="https://scoutwiki.scouts.org.za/wiki/"><h6>Scouts Wiki</h6></a>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @*Use the partial view to display the Tempdata information*@
+            <partial name="_Notification" />
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - MyPatrolLogbook - <a style=" color:#444444" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            - <a style=" color:#444444" asp-area="" asp-controller="Home" asp-action="OurTeam">Our Team</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

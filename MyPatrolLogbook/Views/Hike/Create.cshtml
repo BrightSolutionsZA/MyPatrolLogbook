@@ -1,0 +1,89 @@
+﻿@model MyPatrolLogbook.ViewModels.HikeListViewModel
+
+<form method="post">
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Add Hike Information</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user is required to input as well as where it should be saved-->
+		<div class="mb-3">
+			<label>Hike Name *</label>
+			<input asp-for="NameOfHike" class="form-control" />
+			<span asp-validation-for="NameOfHike" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Permit ID *</label>
+			<input asp-for="PermitID" class="form-control" />
+			<span asp-validation-for="PermitID" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="StartDateAndTime">Start Date *</label>
+			<input type="date" class="form-control" asp-for="StartDateAndTime" />
+			<span asp-validation-for="StartDateAndTime" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="EndDateAndTime">End Date *</label>
+			<input type="date" class="form-control" asp-for="EndDateAndTime" />
+			<span asp-validation-for="EndDateAndTime" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Venue Name *</label>
+			<input asp-for="NameOfVenue" class="form-control" />
+			<span asp-validation-for="NameOfVenue" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Venue Address *</label>
+			<input asp-for="AddressOfVenue" class="form-control" />
+			<span asp-validation-for="AddressOfVenue" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Hike Cost *</label>
+			<input asp-for="CostOfHike" class="form-control" />
+			<span asp-validation-for="CostOfHike" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Hike Distance</label>
+			<input asp-for="DistanceOfHike" class="form-control" />
+			<span asp-validation-for="DistanceOfHike" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Hike Description *</label>
+			<input asp-for="DescriptionOfHike" class="form-control" />
+			<span asp-validation-for="DescriptionOfHike" class="text-danger"></span>
+		</div>
+
+		<label>Hike Attendance *</label>
+		<br />
+		@foreach (var option in ViewBag.CheckboxOptions)
+		{
+			<label>
+				<input type="checkbox" name="SelectedScouts" value="@option" class="form-check-input" />
+				@option
+			</label>
+
+			<br />
+		}
+
+		<br />
+
+		<!--Button that allows the user to add teh entry to the database-->
+		<button type="submit" class="btn btn-primary" style="width:200px">Save Hike Information</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="Hike" asp-action="Index" class="btn btn-secondary" style="width:200px">
+			Back to List of Hikes
+		</a>
+
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+	</div>
+</form>

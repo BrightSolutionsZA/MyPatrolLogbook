@@ -1,0 +1,81 @@
+﻿@model MyPatrolLogbook.ViewModels.CommunityServiceListViewModel
+
+<form method="post">
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Add Community Service Project Information</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user is required to input as well as where it should be saved-->
+		<div class="mb-3">
+			<label>Project Name *</label>
+			<input asp-for="NameOfProject" class="form-control" />
+			<span asp-validation-for="NameOfProject" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Permit ID *</label>
+			<input asp-for="PermitID" class="form-control" />
+			<span asp-validation-for="PermitID" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="StartDateAndTime">Start Date *</label>
+			<input type="date" class="form-control" asp-for="StartDateAndTime" />
+			<span asp-validation-for="StartDateAndTime" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="EndDateAndTime">End Date *</label>
+			<input type="date" class="form-control" asp-for="EndDateAndTime" />
+			<span asp-validation-for="EndDateAndTime" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Venue Name</label>
+			<input asp-for="NameOfVenue" class="form-control" />
+			<span asp-validation-for="NameOfVenue" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Number of total Project Hours *</label>
+			<input asp-for="OverallHours" class="form-control" />
+			<span asp-validation-for="OverallHours" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Project Description *</label>
+			<input asp-for="DescriptionOfProject" class="form-control" />
+			<span asp-validation-for="DescriptionOfProject" class="text-danger"></span>
+		</div>
+
+		<label>Project Attendance *</label>
+		<br />
+		@foreach (var option in ViewBag.CheckboxOptions)
+		{
+			<div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="SelectedScouts" value="@option" class="form-check-input" />
+						@option
+					</label>
+				</div>
+			</div>
+
+			<br />
+		}
+
+		<br />
+
+		<!--Button that allows the user to add teh entry to the database-->
+		<button type="submit" class="btn btn-primary" style="width:220px">Save Project Information</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="CommunityService" asp-action="Index" class="btn btn-secondary" style="width:220px">
+			Back to List of Projects
+		</a>
+
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+	</div>
+</form>

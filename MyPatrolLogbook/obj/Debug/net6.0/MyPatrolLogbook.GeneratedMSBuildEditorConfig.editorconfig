@@ -1,0 +1,465 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyPatrolLogbook
+build_property.RootNamespace = MyPatrolLogbook
+build_property.ProjectDir = C:\Users\lab_services_student\source\repos\MyPatrolLogbook Latest\MyPatrolLogbook\MyPatrolLogbook\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\source\repos\MyPatrolLogbook Latest\MyPatrolLogbook\MyPatrolLogbook
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Lockout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGlzYWJsZTJmYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRG93bmxvYWRQZXJzb25hbERhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRXh0ZXJuYWxMb2dpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcR2VuZXJhdGVSZWNvdmVyeUNvZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUmVzZXRBdXRoZW50aWNhdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/ShowRecoveryCodes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2hvd1JlY292ZXJ5Q29kZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcVHdvRmFjdG9yQXV0aGVudGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Camp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Camp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Camp/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcFxJbmRleFJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CommunityService/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5U2VydmljZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CommunityService/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5U2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CommunityService/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbXVuaXR5U2VydmljZVxJbmRleFJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentScout/AdminMustConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFNjb3V0XEFkbWluTXVzdENvbmZpcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentScout/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFNjb3V0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentScout/DisplayPatrolLeaders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFNjb3V0XERpc3BsYXlQYXRyb2xMZWFkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentScout/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFNjb3V0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentScout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFNjb3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentTroopScouter/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFRyb29wU2NvdXRlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/CurrentTroopScouter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVudFRyb29wU2NvdXRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Evaluation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Evaluation/IndexTroopScouter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGlvblxJbmRleFRyb29wU2NvdXRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Hike/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlrZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Hike/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlrZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Hike/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlrZVxJbmRleFJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Home/HowToGuide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb3dUb0d1aWRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Home/OurTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPdXJUZWFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/MyPatrolInformation/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQYXRyb2xJbmZvcm1hdGlvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/MyPatrolInformation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQYXRyb2xJbmZvcm1hdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/MyPatrolInformation/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQYXRyb2xJbmZvcm1hdGlvblxJbmRleFJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/MyPatrolInformation/TroopScouterMustConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlQYXRyb2xJbmZvcm1hdGlvblxUcm9vcFNjb3V0ZXJNdXN0Q29uZmlybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewScout/AdminMustConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3U2NvdXRcQWRtaW5NdXN0Q29uZmlybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewScout/AssignPatrol.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3U2NvdXRcQXNzaWduUGF0cm9sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewScout/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3U2NvdXRcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewScout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3U2NvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewTroopScouter/Confirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3VHJvb3BTY291dGVyXENvbmZpcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewTroopScouter/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3VHJvb3BTY291dGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/NewTroopScouter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3VHJvb3BTY291dGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolActivity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sQWN0aXZpdHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolActivity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sQWN0aXZpdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolActivity/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sQWN0aXZpdHlcSW5kZXhSZWFkT25seS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolInCouncil/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sSW5Db3VuY2lsXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolInCouncil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sSW5Db3VuY2lsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/PatrolInCouncil/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sSW5Db3VuY2lsXEluZGV4UmVhZE9ubHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Patrol/AdminMustConfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sXEFkbWluTXVzdENvbmZpcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Patrol/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Patrol/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Patrol/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Patrol/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0cm9sXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Register/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Register/IndexReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXhSZWFkT25seS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/Assign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/AssignScout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ25TY291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/AssignTS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ25UUy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/Confirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDb25maXJtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Role/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/CampReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxDYW1wUmVhZE9ubHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/CommunityServiceReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxDb21tdW5pdHlTZXJ2aWNlUmVhZE9ubHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/HikeReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxIaWtlUmVhZE9ubHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/PatrolActivityReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxQYXRyb2xBY3Rpdml0eVJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/PatrolInformationReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxQYXRyb2xJbmZvcm1hdGlvblJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/ScoutPatrolInformation/RegisterReadOnly.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2NvdXRQYXRyb2xJbmZvcm1hdGlvblxSZWdpc3RlclJlYWRPbmx5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Troop/Assign.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJvb3BcQXNzaWduLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Troop/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJvb3BcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Troop/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJvb3BcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Troop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJvb3BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/MyPatrolLogbook Latest/MyPatrolLogbook/MyPatrolLogbook/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4c4qn3k93x

@@ -1,0 +1,437 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MyPatrolLogbook.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyPatrolLogbook.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\Patrol-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\Patrol-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\Troop-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\Troop-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\activity-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\activity-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\activitycropped.png",
+      "PackagePath": "staticwebassets\\img\\activitycropped.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\bowling.jpeg",
+      "PackagePath": "staticwebassets\\img\\bowling.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\bright.jpg",
+      "PackagePath": "staticwebassets\\img\\bright.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\camp.gif",
+      "PackagePath": "staticwebassets\\img\\camp.gif"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\camp2.JPG",
+      "PackagePath": "staticwebassets\\img\\camp2.JPG"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\cederberg.jpeg",
+      "PackagePath": "staticwebassets\\img\\cederberg.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\commservgif.gif",
+      "PackagePath": "staticwebassets\\img\\commservgif.gif"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\community-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\community-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\current-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\current-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\currentpatrols-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\currentpatrols-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\currentts-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\currentts-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\currenttscropped.png",
+      "PackagePath": "staticwebassets\\img\\currenttscropped.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\discoverer.png",
+      "PackagePath": "staticwebassets\\img\\discoverer.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\evaluation.png",
+      "PackagePath": "staticwebassets\\img\\evaluation.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\evaluationprogress-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\evaluationprogress-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\firstclass.png",
+      "PackagePath": "staticwebassets\\img\\firstclass.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\footer1.png",
+      "PackagePath": "staticwebassets\\img\\footer1.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\footer1long.png",
+      "PackagePath": "staticwebassets\\img\\footer1long.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\hike-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\hike-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\hike2.jpeg",
+      "PackagePath": "staticwebassets\\img\\hike2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\hikeopac.jpeg",
+      "PackagePath": "staticwebassets\\img\\hikeopac.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\mountainsgif.gif",
+      "PackagePath": "staticwebassets\\img\\mountainsgif.gif"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\mpl.ico",
+      "PackagePath": "staticwebassets\\img\\mpl.ico"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\mplnobg.ico",
+      "PackagePath": "staticwebassets\\img\\mplnobg.ico"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\mplnobg.png",
+      "PackagePath": "staticwebassets\\img\\mplnobg.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\new-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\new-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\newts.png",
+      "PackagePath": "staticwebassets\\img\\newts.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\orb4.png",
+      "PackagePath": "staticwebassets\\img\\orb4.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\orbs4.png",
+      "PackagePath": "staticwebassets\\img\\orbs4.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\patrols-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\patrols-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\pic-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\pic-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\registergif.gif",
+      "PackagePath": "staticwebassets\\img\\registergif.gif"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\scoutslogo.png",
+      "PackagePath": "staticwebassets\\img\\scoutslogo.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\spbadge.png",
+      "PackagePath": "staticwebassets\\img\\spbadge.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\springbok.png",
+      "PackagePath": "staticwebassets\\img\\springbok.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\tent2.gif",
+      "PackagePath": "staticwebassets\\img\\tent2.gif"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\traveller.png",
+      "PackagePath": "staticwebassets\\img\\traveller.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\troopcropped.png",
+      "PackagePath": "staticwebassets\\img\\troopcropped.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\ts-removebg-preview.png",
+      "PackagePath": "staticwebassets\\img\\ts-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\img\\tscropped.jpg",
+      "PackagePath": "staticwebassets\\img\\tscropped.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\lab_services_student\\source\\repos\\MyPatrolLogbook Latest\\MyPatrolLogbook\\MyPatrolLogbook\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MyPatrolLogbook.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MyPatrolLogbook.props",
+      "PackagePath": "build\\MyPatrolLogbook.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MyPatrolLogbook.props",
+      "PackagePath": "buildMultiTargeting\\MyPatrolLogbook.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MyPatrolLogbook.props",
+      "PackagePath": "buildTransitive\\MyPatrolLogbook.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

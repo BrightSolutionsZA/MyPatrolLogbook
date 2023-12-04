@@ -1,0 +1,71 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.TroopListViewModel
+
+<br />
+
+<div class="row pt-4">
+
+    <div class="col-6 text-start">
+
+        <h2 style="color:#444444">List of Troops</h2>
+    </div>
+
+    <div class="col-6 text-end">
+        <a asp-controller="Troop" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Add New Troop
+            </a>
+    </div>
+
+
+</div>
+
+<br />
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide2" style="width:100%">
+    <!--Table headings-->
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                Troop Name
+            </th>
+        </tr>
+    </thead>
+
+        <!--Table body-->
+        <tbody>
+            @foreach (var troop in Model.Troops)
+            {
+                <tr>
+                <td style ="text-align: center; vertical-align: middle;">
+                        @troop.TroopName
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust3">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/troopcropped.png" alt="Image of Troops in Region">
+                        <div class="cap">
+                            Image Ref: Shutterstock, n.d.
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

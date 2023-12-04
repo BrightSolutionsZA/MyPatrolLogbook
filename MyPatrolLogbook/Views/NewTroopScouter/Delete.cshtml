@@ -1,0 +1,51 @@
+﻿<!--Points to the model class-->
+@model ApplicationUser
+
+<form method="post" asp-action="Delete">
+	<div class="custom-border p-3 mt-4 style=" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Are you sure that you want to Remove this Troop Scouter?</h2>
+			<hr />
+		</div>
+
+		<!--Displays the information that the user has saved regarding the Product-->
+		<div class="mb-3">
+			<label asp-for="SSAID">SSAID</label>
+			<input asp-for="SSAID" disabled class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="FirstName">First Name</label>
+			<input asp-for="FirstName" disabled class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="LastName">Last Name</label>
+			<input asp-for="LastName" disabled class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="Email">Email</label>
+			<input asp-for="Email" disabled class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="TroopId">Selected Troop Name</label>
+			@Html.DropDownList("TroopList", ViewBag.troopList as SelectList, new { @class= "form-control custom-dropdown", disabled = "disabled" })
+		</div>
+
+		<br />
+		<br />
+
+		<!--Button that allows the user to remove the entry to the database-->
+		<button type="submit" class="btn btn-danger" style="width:280px">Remove Troop Scouter</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="NewTroopScouter" asp-action="Index" class="btn btn-secondary" style="width:280px">Back to List of New Troop Scouters</a>
+
+		<br />
+		<br />
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+	</div>
+</form>

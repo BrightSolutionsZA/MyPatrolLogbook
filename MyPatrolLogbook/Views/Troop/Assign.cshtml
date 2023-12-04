@@ -1,0 +1,30 @@
+﻿
+<br />
+<!--Heading-->
+<h2 style="color:#444444">Please Select Your Troop</h2>
+
+<br />
+
+<!--Displays the various roles in the form of radio buttons-->
+<form asp-action="Submit" method="post">
+    @Html.DropDownList("TroopList", ViewBag.troopList as SelectList, "-- Select an Option --", new { @class= "form-control custom-dropdown" })
+
+    <br />
+
+    <!--Button that allows the user to save their selected role to the database-->
+    <button type="submit" class="btn btn-primary">Save Troop Selection</button>
+
+</form>
+
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

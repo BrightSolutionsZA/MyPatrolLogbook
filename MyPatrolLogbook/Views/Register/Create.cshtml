@@ -1,0 +1,45 @@
+﻿@model MyPatrolLogbook.ViewModels.RegisterListViewModel
+
+<form method="post">
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Mark Attendance on the Register</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user is required to input as well as where it should be saved-->
+
+		<div class="mb-3">
+			<label asp-for="MeetingAttendanceDate">Meeting Date *</label>
+			<input class="form-control" type="date" asp-for="MeetingAttendanceDate"/>
+			<span asp-validation-for="MeetingAttendanceDate" class="text-danger"></span>
+		</div>
+
+
+		<label>Meeting Attendance *</label>
+		<br />
+		@foreach (var option in ViewBag.CheckboxOptions)
+		{
+			<label>
+				<input type="checkbox" name="MeetingAttendanceScouts" value="@option" class="form-check-input" />
+				@option
+			</label>
+
+			<br />
+		}
+
+		<br />
+		<br />
+
+		<!--Button that allows the user to add teh entry to the database-->
+		<button type="submit" class="btn btn-primary" style="width:150px">Save Attendance</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="Register" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to Register
+		</a>
+
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0; z-index: -1;">
+		<br />
+	</div>
+</form>

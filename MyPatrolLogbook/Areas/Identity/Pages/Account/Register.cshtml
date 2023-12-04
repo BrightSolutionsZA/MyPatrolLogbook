@@ -1,0 +1,115 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<br />
+<h1 style="color:#444444">@ViewData["Title"]</h1>
+<hr />
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <section>
+
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                <div class="mb-3">
+                        <label>SSA ID *</label>
+                        <input asp-for="Input.SSAID" class="form-control" autocomplete="ssaid" aria-required="true" type="text" />
+                        <span asp-validation-for="Input.SSAID" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                        <label>First Name *</label>
+                        <input asp-for="Input.FirstName" class="form-control" autocomplete="firstname" aria-required="true" type="text" />
+                        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+                </div>  
+                
+                <div class="mb-3">
+                        <label>Last Name *</label>
+                        <input asp-for="Input.LastName" class="form-control" autocomplete="lastname" aria-required="true" type="text"/>
+                        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>   
+
+                <div class="mb-3">
+                        <label>Email *</label>
+                        <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" type="email" />
+                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label>Password *</label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" type="password" />
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label>Confirm Password *</label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" type="password" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+
+                </div>
+
+                <br />
+                <div>
+                    <button id="registerSubmit" type="submit" class="w-100 btn btn-secondary">Register</button>
+                </div>
+                <br />
+                <div>
+                    <p>
+                        <a class="btn btn-primary" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Already Have An Account</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="col-md-6 text-start">
+        <section>
+            <h2 style="color:#444444">Note:</h2>
+            <br/>
+            <p>
+                Once you click the Register Button, you will be required to choose whether you are a Scout or a Troop Scouter. After that, you will be required to ‘Confirm your Email’. Once you have confirmed your email, you will then be required to select the province and troop that you belong to.
+                <br/>
+                <br/>
+                If you are a Scout, an email will be sent to you Troop Scouter and they will be required to assign you to your Patrol and verify your account.
+                <br />
+                <br />
+                If you are a Troop Scouter, an email will be sent to you Provincial Admin and they will be required to verify your account.
+                <br />
+                <br />
+                Once your account has been verified, you will then have complete access to the respective portions of the website.
+                <br />
+                <br />
+                If you are a Troop Scouter, please register using your ‘Scouts South Africa’ email address.
+            </p>
+
+            <br />
+            <div>
+                <p>
+                    <a class="btn btn-primary" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+                </p>
+            </div>
+
+        </section>
+    </div>
+</div>
+<br />
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+   

@@ -1,0 +1,211 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.EvaluationListViewModel
+
+<br />
+
+<div class="row pt-4">
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">Star Patrol Evaluation List</h2>
+        <br>
+        <h4 style="color:#444444">Hover/Tap on a Heading to display its description.</h4>
+    </div>
+
+    <div class="col-6 text-end">
+        <form method="post">
+            @Html.DropDownList("PatrolList", ViewBag.patrolList as SelectList, "Select a Patrol", new { @class = "custom-dropdown" })
+            <input class="btn btn-primary" type="submit" value="Filter by Patrol" />
+        </form>
+        <br />
+        <h4>@ViewData["filterByPatrolEvaluation"]</h4>
+    </div>
+</div>
+
+<br />
+
+<div class="table-responsive">
+    <!--Table that displays the products saved in the database-->
+    <table class="tableSlide2">
+        <!--Table headings-->
+        <thead>
+            <tr>
+                <th class="popuphover" onmouseover="showPopupts(popup)" onmouseout="hidePopupts()" rowspan="2" style="text-align: center; vertical-align: middle;">
+                    Number of Scouts
+                </th>
+                <th class="popuphover" onmouseover="showPopupts2(popup2)" onmouseout="hidePopupts2()" rowspan="2" style="text-align: center; vertical-align: middle;">
+                    Patrol Advancement
+                </th>
+                <th rowspan="2" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts3(popup3)" onmouseout="hidePopupts3()">
+                    Attendance %
+                </th>
+
+                <th rowspan="2" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts4(popup4)" onmouseout="hidePopupts4()">
+                    Patrol In Council
+                </th>
+
+                <th rowspan="2" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts5(popup5)" onmouseout="hidePopupts5()">
+                    Patrol Corners
+                </th>
+
+                <th rowspan="1" colspan="2" style="text-align: center; vertical-align: middle;">
+                    Patrol Leader
+                </th>
+
+                <th rowspan="1" colspan="2" style="text-align: center; vertical-align: middle;">
+                    Assistant Patrol Leader
+                </th>
+
+                <th rowspan="2" colspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts10(popup10)" onmouseout="hidePopupts10()">
+                    Patrol Members 3 & 4 Advancement
+                </th>
+                <th rowspan="1" colspan="4" style="text-align: center; vertical-align: middle;">
+                    Number of Patrol
+                </th>
+                <th rowspan="2" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts15(popup15)" onmouseout="hidePopupts15()">
+                    National Challenege %
+                </th>
+            </tr>
+
+            <tr>
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts6(popup6)" onmouseout="hidePopupts6()">Advancement</th>
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts7(popup7)" onmouseout="hidePopupts7()">Training</th>
+
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts8(popup8)" onmouseout="hidePopupts8()">Advancement</th>
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts9(popup9)" onmouseout="hidePopupts9()">Training</th>
+
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts11(popup11)" onmouseout="hidePopupts11()">Activities</th>
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts12(popup12)" onmouseout="hidePopupts12()">Hikes</th>
+                <th rowspan="1" style="text-align: center; vertical-align: middle; white-space: nowrap;" class="popuphover" onmouseover="showPopupts13(popup13)" onmouseout="hidePopupts13()">Camps</th>
+                <th rowspan="1" style="text-align: center; vertical-align: middle;" class="popuphover" onmouseover="showPopupts14(popup14)" onmouseout="hidePopupts14()">Community Service Hours</th>
+            </tr>
+        </thead>
+         @if (Model != null)
+        {
+        <!--Table body-->
+        <tbody>
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfScoutsCount
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.HasPatrolJobs
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.AttendancePercentage
+                    </td>
+
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfPICsCount
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.HasPatrolCorner
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.PatrolLeaderAdvancementValid
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.PatrolLeaderHasTraining
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.AssistantPatrolLeaderAdvancementValid
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.AssistantPatrolLeaderHasTraining
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.PatrolMembersAdvancementValid
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfPatrolActivitiesCount
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfHikesCount
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfCampsCount
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NumberOfCommunityServiceProjectsHours
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                        @Model.NationalChallengePercentage
+                    </td>
+                </tr>
+
+            <tr>
+                <td colspan="15" style="text-align: center; vertical-align: middle;">
+                    <h3 style="color:#444444">Star Patrol Award Achieved: <b>@Model.StarPatrolAwardAchieved</b></h3>
+                </td>
+            </tr>
+
+        </tbody>
+        }
+        else
+        {
+        <tr>
+            <td colspan="15" style="text-align: center; vertical-align: middle;">Please Filter by a Specific Patrol</td>
+        </tr>
+        }
+
+    </table>
+</div>
+
+
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust">
+                    <!-- Your images here -->
+
+                    <div class="imageRef">
+                        <img src="/img/evaluationprogress-removebg-preview.png" alt="Image of Evaluation" style="width:300px;">
+                        <div class="cap">
+                            Image Ref: Signkey, n.d.
+                        </div>
+                    </div>
+                    <div class="imageRef">
+                        <img src="/img/evaluation.png" alt="Image of Evaluation">
+                        <div class="cap">
+                            Image Ref: Scouts South Africa, n.d.
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <p class="popup" id="popup">Total number of Scouts in the Patrol</p>
+
+    <p class="popup" id="popup2">Every Patrol Member has a Specific Role and Responsibility</p>
+
+    <p class="popup" id="popup3">Average Attendance of the Patrol at Patrol and Troop meetings and Activities for the Period of Review</p>
+
+    <p class="popup" id="popup4">The Patrol has held Regular Patrol in Council Meetings during the Period of Review</p>
+
+    <p class="popup" id="popup5">The Patrol has a Clearly Defined Area for a Patrol Corner at the Troop Meeting Place</p>
+
+    <p class="popup" id="popup6">PL has First Class (or Higher) OR has the Discoverer AND has at least 3 Theme Badges</p>
+
+    <p class="popup" id="popup7">PL has Completed a Leadership Training Course (LDC, PLTC, PLTU) OR Completed Appropriate Advancement Leadership Requirements</p>
+
+    <p class="popup" id="popup8">APL has the Discoverer (or Higher) OR has the Traveller AND has at least 3 Discoverer Theme Badges</p>
+
+    <p class="popup" id="popup9">APL has Completed a Leadership Training Course (LDC, PLTC, PLTU) OR Completed Appropriate Advancement Leadership Requirements</p>
+
+    <p class="popup" id="popup10">Patrol Members 3 & 4 Both have the Traveller (or Higher) OR Have Both Earned 3 Theme badges</p>
+
+    <p class="popup" id="popup11">Number of Patrol Activities held during the Period of Review (not Hikes or Camps or Troop Meeting Activities)</p>
+
+    <p class="popup" id="popup12">Number of Patrol Day Hikes (Minimum 2 Hours), Overnight Hikes (or Longer) held during the Period of Review</p>
+
+    <p class="popup" id="popup13">Number of Patrol Camps, at least Overnight (or longer) held during the Period of Review</p>
+
+    <p class="popup" id="popup14">Number of Scout-Hours the Patrol is involved in a Community Service Project during the Period of Review</p>
+
+    <p class="popup" id="popup15">Percentage of Scouts that have earned Sustainable Development Goal (SDG) / National Challenge Badges</p>
+</div>

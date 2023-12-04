@@ -1,0 +1,44 @@
+﻿<!--Points to the model class-->
+@model Patrol
+
+<br />
+<br />
+<!--Creates form for the user to remove the relevant information-->
+<form method="post" asp-action="Delete">
+	<input asp-for="PatrolId" hidden />
+	<input asp-for="TroopId" hidden />
+	<div class="custom-border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Delete Patrol</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user has saved regarding the Product-->
+		<div class="mb-3">
+			<label asp-for="PatrolName"></label>
+			<input asp-for="PatrolName" disabled class="form-control" />
+		</div>
+		
+		<br />
+
+		<div class="mb-3">
+			<label asp-for="HasPatrolCorner">Has Patrol Corner?</label>
+			@Html.DropDownList("PatrolCorner", ViewBag.patrolCorner as SelectList, new { @class= "form-control", disabled = "disabled" })
+		</div>
+
+		<!--Button that allows the user to remove the entry to the database-->
+		<button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="Patrol" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</form>
+
+<br />
+<br />
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

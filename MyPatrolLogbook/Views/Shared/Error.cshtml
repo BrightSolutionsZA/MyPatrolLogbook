@@ -1,0 +1,27 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Error</h1>
+<h2 class="text-danger" style="color:#444444">An error occurred while processing your request.</h2>
+
+@if (Model.ShowRequestId)
+{
+    <p style="color:#444444">
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+        <br/>
+        Please refresh the page and try again!
+    </p>
+}
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

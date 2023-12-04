@@ -1,0 +1,98 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using Microsoft.AspNetCore.Identity
+@using MyPatrolLogbook.Models
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+
+<body class="image-container-home-bg">
+
+<br/>
+
+
+<div class="text-center">
+
+    <div class="text-center">
+        <h1>MyPatrolLogbook</h1>
+        <br/>
+         @if (SignInManager.IsSignedIn(User))
+        {
+        var user = await UserManager.GetUserAsync(User);
+            <h2>Welcome @user.FirstName @user.LastName!</h2>
+        }
+        <br />
+    </div>
+    <br />
+        <div class="containerHome">
+            <div class="textHome">
+                <p>
+                    <h3>What is the Purpose of this Website?</h3>
+                    <br />
+                    <b>
+                        MyPatrolLogbook aims to help scouts store and organize information about their patrol that is necessary for the
+                        Star Patrol Evaluation that takes place at the end of each year. Not only does MyPatrolLogbook make it easy for scouts
+                        to access information about the various patrol camps, hikes, activities and patrol in council meetings or even information
+                        about their patrol, but it also assists patrols with calculating what their current Start Patrol status is, based on the saved
+                        information, allowing them to improve on it during the course of the year.
+                    </b>
+                </p>
+            </div>
+            <div class="imageHome">
+                <div class="imageRef">
+
+                    <img src="/img/mplnobg.png" alt="Image of MyPatrolLogbook" class="img-fluid" style="height:300px;">
+                    <div class="cap">
+                        Image Ref: Naidu, 2023
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="containerHome">
+            <div class="textHomeRight">
+                <h3>What is Scouts South Africa?</h3>
+                <br />
+                <p>
+                    <b>
+                        The largest youth organization in the nation is SCOUTS South Africa.
+                        Scouting transforms lives and enables children and teens to reach their full potential.
+                        Leadership qualities, teamwork, self-motivation, commitment, perseverance, environmental and cultural awareness,
+                        and strong values are among the many life skills scouts pick up while having fun and gaining knowledge by doing.
+                        For more information about Scouts South Africa <a style=" color:#444444" href="https://www.scouts.org.za/">click here</a>.
+                    </b>
+                </p>
+            </div>
+            <div class="textHome2">
+                <div class="imageRef">
+                    <img src="/img/scoutslogo.png" alt="Image of Scouts South Africa Logo" class="img-fluid" style="height:300px;">
+                    <div class="cap">
+                        Image Ref: Scouts South Africa, 2017
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr />
+        <div class="containerHome">
+            <div class="imageHome">
+                <div class="imageRef">
+                    <img src="/img/evaluation.png" alt="Image of Evaluation" class="img-fluid">
+                    <div class="cap">
+                        Image Ref: Scouts South Africa, n.d.
+                    </div>
+                </div>
+
+            </div>
+            <div class="textHome">
+                <h3>For information about the Star Patrol Evaluation, please  <a style=" color:#444444" href="https://www.scouts.org.za/star-troops-patrols/">click here</a>.</h3>
+
+            </div>
+        </div>
+
+</div>
+</body>

@@ -1,0 +1,163 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.MyPatrolInformationListViewModel
+
+<br />
+
+<div class="row pt-4">
+    <div class="col-6">
+        <h2 style="color:#444444">My Patrol Information</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="ExportPatrolInformationInExcel">Download Patrol Information to Excel</a>
+    </div>
+</div>
+
+<br />
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide" style="width:100%">
+    <!--Table headings-->
+    <thead>
+    <tr>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Name</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Birthday</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Cellphone Number</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Patrol Job</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Current Advancement</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Attended A Training Course</th>
+            <th rowspan="1" colspan="4" style="text-align: center; vertical-align: middle;">Number of Theme Badges Earned</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;">Has National Challenge Badge</th>
+            <th rowspan="2" style="text-align: center; vertical-align: middle;"></th>
+    </tr>
+    <tr>
+            <th style="text-align: center; vertical-align: middle;">Traveller</th>
+            <th style="text-align: center; vertical-align: middle;">Discoverer</th>
+            <th style="text-align: center; vertical-align: middle; white-space: nowrap;">First Class</th>
+            <th style="text-align: center; vertical-align: middle;">Springbok</th>
+    </tr>
+</thead>
+
+    <!--Table body-->
+    <tbody>
+        @foreach (var user in Model.MyScouts)
+        {
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" width="100px">
+                    @user.FirstName
+                    @user.LastName
+                </td>
+
+                <td style ="text-align: center; vertical-align: middle;">@user.BirthdayStr</td>
+
+                @if (!string.IsNullOrEmpty(user.CellNumber.ToString()) || user.CellNumber.ToString() != "0")
+                {
+                    <td style="text-align: center; vertical-align: middle;">+27 @user.CellNumber</td>
+                }
+                else
+                {
+                    <td></td>
+                }
+
+                <td style="text-align: center; vertical-align: middle;">@user.PatrolJob</td>
+
+                <td style="text-align: center; vertical-align: middle;">@user.CurrentAdvancementAchieved</td>
+
+                @if(user.HasAttendedTraining == true)
+                {
+                    <td style="text-align: center; vertical-align: middle;">
+                        Yes
+                    </td>
+                }
+                else
+                if (user.HasAttendedTraining == false)
+                {
+                    <td style="text-align: center; vertical-align: middle;">
+                        No
+                    </td>
+                }
+                else
+                {
+                    <td></td>
+                }
+
+                <td style="text-align: center; vertical-align: middle;">@user.NumTravellerTheme</td>
+                <td style="text-align: center; vertical-align: middle;">@user.NumDiscovererTheme</td>
+                <td style="text-align: center; vertical-align: middle;">@user.NumFirstClassTheme</td>
+                <td style="text-align: center; vertical-align: middle;">@user.NumSpringbokTheme</td>
+
+                @if(user.HasNationalChallenge == true)
+                {
+                    <td style="text-align: center; vertical-align: middle;">
+                        Yes
+                    </td>
+                }
+                else
+                if (user.HasNationalChallenge == false)
+                {
+                    <td style="text-align: center; vertical-align: middle;">
+                        No
+                    </td>
+                }
+                else
+                {
+                    <td></td>
+                }
+
+                <td style="text-align: center; vertical-align: middle;">
+                    <!--Anchor Tags that redirects the user to a new page if it's been clicked-->
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="MyPatrolInformation" asp-action="Edit" asp-route-id="@user.Id"
+                       class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i>Update</a>
+                    </div>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+</div>
+
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/traveller.png" alt="Image of Traveller Badge">
+                        <div class="cap">
+                            Image Ref: Scouts South Africa, 2019
+                        </div>
+                    </div>
+                    
+                    <div class="imageRef">
+                        <img src="/img/discoverer.png" alt="Image of a Discoverer Badge">
+                        <div class="cap">
+                            Image Ref: Scouts South Africa, 2019
+                        </div>
+                    </div>
+                    
+                    <div class="imageRef">
+                        <img src="/img/firstclass.png" alt="Image of a First Class Badge">
+                        <div class="cap">
+                            Image Ref: Scouts South Africa, 2019
+                        </div>
+                    </div>
+                    
+                    <div class="imageRef">
+                        <img src="/img/spbadge.png" alt="Image of a Springbok Badge" style="width:170px;">
+                        <div class="cap">
+                            Image Ref: Scouts South Africa, n.d.
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,143 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.CampListViewModel
+
+<br />
+
+<div class="row pt-4">
+    
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">List of Patrol Camps</h2>
+        <br/>
+        <form>
+            <h5 style="color:#444444">
+                Start Date: <input type="date" asp-for="StartDate" class="dp-custom" />
+            </h5>
+
+            <h5 style="color:#444444">
+                End Date: <input type="date" asp-for="EndDate" class="dp-custom" />
+            </h5>
+            <input class="btn btn-primary" type="submit" value="Filter by Date" />
+        </form>
+    </div>
+
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="ExportCampsInExcel">Download Camp Information to Excel</a>
+    </div>
+
+</div>
+
+<br />
+<div class="table-responsive">
+    <!--Table that displays the products saved in the database-->
+<table class="tableSlide" style="width:100%">
+        <!--Table headings-->
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                Camp Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Permit ID
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Camp Start Date
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Camp End Date
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Venue Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Venue Address
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Camp Cost
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Attendance
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Camp Description
+            </th>
+        </tr>
+    </thead>
+        <!--Table body-->
+        @if (Model != null && Model.Camps != null && Model.Camps.Any())
+        {
+        <tbody>
+            @foreach (var camp in Model.Camps)
+            {
+            <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.CampName
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.PermitId
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.StartDateTimeStr
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.EndDateTimeStr
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.VenueName
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.VenueAddress
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    R @camp.CampCost
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.CampAttendance
+                </td>
+                <td style="text-align: center; vertical-align: middle;">
+                    @camp.CampDescription
+                </td>
+            </tr>
+            }
+        </tbody>
+
+        }
+        else
+        {
+        <tr>
+            <td colspan="9" style="text-align: center; vertical-align: middle;">No Camps Saved</td>
+        </tr>
+        }
+    </table>
+    </div>
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust2">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/tent2.gif" alt="GIF of Scout Camp">
+                        <div class="cap">
+                            Image Ref: JeDécore, n.d.
+                        </div>
+
+                    </div>
+
+                    <div class="imageRef">
+                        <img src="/img/camp.gif" alt="Image of Scout Camp">
+                        <div class="cap">
+                            Image Ref: ClipartLibrary, n.d.
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+

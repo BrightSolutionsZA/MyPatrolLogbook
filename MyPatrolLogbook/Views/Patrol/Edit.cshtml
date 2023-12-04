@@ -1,0 +1,42 @@
+﻿<!--Points to the model class-->
+@model Patrol
+
+<!--Creates form for the user to remove the relevant information-->
+<form method="post" asp-action="Edit">
+
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Update Patrol Corner Status</h2>
+			<hr />
+		</div>
+
+		<input asp-for="PatrolId" hidden />
+		<input asp-for="TroopId" hidden />
+
+		<div class="mb-3">
+			<label asp-for="PatrolName"></label>
+			<input asp-for="PatrolName" disabled class="form-control" />
+		</div>
+
+		<div class="mb-3">
+			<label asp-for="HasPatrolCorner">Has Patrol Corner?</label>
+			<!--Html.DropDownList("PatrolJobsSelected", ViewBag.PatrolJobDropDown as List<SelectListItem>, "-- Select Patrol Job --", new { class = "form-control" })-->
+			@Html.DropDownListFor(m => m.HasPatrolCorner,  ViewBag.BoolDropDown as List<SelectListItem>,"-- Select an Option --", new { @class = "form-control custom-dropdown" })
+			@Html.ValidationMessageFor(model => model.HasPatrolCorner, "", new { @class = "text-danger" })
+		</div>
+
+		<br />
+		<br />
+
+		<!--Button that allows the user to edit teh entry in the database-->
+		<button type="submit" class="btn btn-primary" style="width:230px">Update Patrol Corner Status</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="Patrol" asp-action="Index" class="btn btn-secondary" style="width:230px">Back to Patrol List</a>
+
+		<br />
+		<br />
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+	</div>
+</form>

@@ -1,0 +1,37 @@
+﻿<!--Points to the model class-->
+@model Troop
+
+<br />
+<br />
+<!--Creates form for the user to remove the relevant information-->
+<form method="post" asp-action="Delete">
+	<input asp-for="TroopId" hidden />
+	<input asp-for="ProvinceId" hidden />
+	<div class="custom-border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Delete Troop</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user has saved regarding the Product-->
+		<div class="mb-3">
+			<label asp-for="TroopName"></label>
+			<input asp-for="TroopName" disabled class="form-control" />
+		</div>
+
+		<!--Button that allows the user to remove the entry to the database-->
+		<button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="Troop" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</form>
+
+<br />
+<br />
+@section Scripts{
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

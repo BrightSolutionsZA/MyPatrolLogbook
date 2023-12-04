@@ -1,0 +1,135 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.CommunityServiceListViewModel
+
+
+<br />
+
+<div class="row pt-4">
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">List of Patrol Community Service Projects</h2>
+        <br />
+        <form>
+            <h5 style="color:#444444">
+                Start Date: <input type="date" asp-for="StartDate" class="dp-custom" />
+            </h5>
+
+            <h5 style="color:#444444">
+                End Date: <input type="date" asp-for="EndDate" class="dp-custom" />
+            </h5>
+            <input class="btn btn-primary" type="submit" value="Filter by Date" />
+        </form>
+    </div>
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="ExportCommunityServiceInExcel">Download Project Information to Excel</a>
+    </div>
+
+</div>
+
+<br />
+
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide" style="width:100%">
+    <!--Table headings-->
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                Project Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Permit ID
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Project Start Date 
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Project End Date
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Venue Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Overall Project Hours
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Project Description
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Attendance
+            </th>
+        </tr>
+    </thead>
+    @if (Model != null && Model.Projects != null && Model.Projects.Any())
+        {
+            <!--Table body-->
+            <tbody>
+                @foreach (var project in Model.Projects)
+                {
+                    <tr>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.ProjectName
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.PermitId
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.StartDateTimeStr
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.EndDateTimeStr
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.VenueName
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.ProjectHours
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.ProjectDescription
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            @project.ProjectAttendance
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        }
+        else if (Model != null && (Model.Projects == null || !Model.Projects.Any()))
+        {
+            <tr>
+                <td colspan="9" style="text-align: center; vertical-align: middle;">No Projects Saved</td>
+                    </tr>
+            }
+</table>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust2">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/commservgif.gif" alt="Gif of Community Service">
+                        <div class="cap">
+                            Image Ref: Ratta, n.d.
+                        </div>
+
+                    </div>
+
+                    <div class="imageRef">
+                    <img src="/img/community-removebg-preview.png" alt="Image of Community Service">
+                        <div class="cap">
+                            Image Ref: Clipground, n.d.
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

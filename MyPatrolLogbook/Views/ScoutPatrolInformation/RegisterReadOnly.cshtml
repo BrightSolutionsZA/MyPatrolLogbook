@@ -1,0 +1,94 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.RegisterListViewModel
+
+<br />
+
+<div class="row pt-4">
+
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">List of Patrol Registers from Weekly Meetings</h2>
+    </div>
+
+    <div class="col-6 text-end">
+
+        <a class="btn btn-primary" asp-action="ExportRegisterInExcel">Download Patrol Meeting Registers to Excel</a>
+        <br />
+        <br />
+        <form method="post">
+            @Html.DropDownList("PatrolList", ViewBag.patrolList as SelectList, "Select a Patrol", new { @class = "custom-dropdown" })
+
+            <input class="btn btn-primary" type="submit" value="Filter by Patrol" />
+
+        </form>
+
+        <br/>
+        <h4>@ViewData["filterByPatrolRegister"]</h4>
+    </div>
+</div>
+
+<br />
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide2" style="width:100%">
+        <!--Table headings-->
+        <thead>
+            <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                    Meeting Date
+                </th>
+            <th style="text-align: center; vertical-align: middle;">
+                    Who Attended
+                </th>
+            </tr>
+        </thead>
+
+        @if (Model != null && Model.Registers != null && Model.Registers.Any())
+        {
+            <!-- Table body -->
+            <tbody>
+                @foreach (var register in Model.Registers)
+                {
+                    @if (register != null && register.AttendanceDate != null)
+                    {
+                        
+                <tr>
+                        <td style="text-align: center; vertical-align: middle;">
+                        @register.AttendanceDate
+                    </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                        @register.MeetingAttendance
+                    </td>
+                </tr>
+                    }
+                }
+            </tbody>
+        }
+        else if (Model != null && (Model.Registers == null || !Model.Registers.Any()))
+        {
+            <tr>
+            <td style="text-align: center; vertical-align: middle;" colspan="2">No Attendance Registers Available For Selected Patrol</td>
+            </tr>
+        }
+        else
+        {
+            <tr>
+            <td style="text-align: center; vertical-align: middle;" colspan="2">Please Filter by a Specific Patrol</td>
+            </tr>
+        }
+
+    </table>
+    </div>
+
+
+
+<img src="/img/footer1.png" alt="Image of Orbs" class="img-fluid foot" />
+
+<style>
+    footer.text-muted {
+        color: white !important;
+    }
+
+        footer.text-muted a {
+            color: white !important;
+        }
+</style>

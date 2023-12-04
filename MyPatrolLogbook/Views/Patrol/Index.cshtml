@@ -1,0 +1,102 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.PatrolListViewModel
+
+<br />
+
+<div class="row pt-4">
+
+    <div class="col-6 text-start">
+
+        <h2 style="color:#444444">List of Patrols</h2>
+    </div>
+
+    <div class="col-6 text-end">
+         <a asp-controller="Patrol" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> &nbsp; Add New Patrol
+            </a>
+    </div>
+
+
+</div>
+
+<br />
+
+<div class="table-responsive">
+    <!--Table that displays the products saved in the database-->
+<table class="tableSlide2" style="width:100%">
+        <!--Table headings-->
+        <thead>
+            <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                    Patrol Name
+                </th>
+            <th style="text-align: center; vertical-align: middle;">
+                    Has Patrol Corner?
+                </th>
+
+            <th style="text-align: center; vertical-align: middle;"></th>
+            </tr>
+        </thead>
+        <!--Table body-->
+        <tbody>
+            @foreach (var patrol in Model.Patrols)
+            {
+                <tr>
+                <td style="text-align: center; vertical-align: middle;">
+                        @patrol.PatrolName
+                    </td>
+                    @if (patrol.HasPatrolCorner == true)
+                    {
+                    <td style="text-align: center; vertical-align: middle;" width="30%">
+                            Yes
+                        </td>
+                    }
+                    else
+                   if (patrol.HasPatrolCorner == false)
+                    {
+                    <td style="text-align: center; vertical-align: middle;" width="30%">
+                            No
+                        </td>
+                    }
+                    else
+                    {
+                    <td style="text-align: center; vertical-align: middle;" width="30%"></td>
+                    }
+                <td style="text-align: center; vertical-align: middle;" width="30%">
+                        <!--Anchor Tags that redirects the user to a new page if it's been clicked-->
+                        <div class="w-75 btn-group" role="group">
+                            <a asp-controller="Patrol" asp-action="Edit" asp-route-id="@patrol.PatrolId"
+                           class="btn btn-primary"> <i class="bi bi-pencil-square"></i> Update Patrol Corner Status</a>
+                        </div>
+                    </td>
+            </tr>
+            }
+        </tbody>
+
+    </table>
+    </div>
+
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust3">
+                    <!-- Your images here -->
+
+                    <div class="imageRef">
+                        <img src="/img/currentpatrols-removebg-preview.png" alt="Image of Patrols">
+                        <div class="cap">
+                            Image Ref: Shutterstock, n.d.
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

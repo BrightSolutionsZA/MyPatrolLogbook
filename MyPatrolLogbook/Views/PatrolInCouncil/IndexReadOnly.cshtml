@@ -1,0 +1,105 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.PatrolInCouncilListViewModel
+
+<br />
+
+<div class="row pt-4">
+
+    <div class="col-6 text-start">
+        <h2 style="color:#444444">Patrol In Council Information</h2>
+        <br />
+        <form>
+            <h5 style="color:#444444">
+                Start Date: <input type="date" asp-for="StartDate" class="dp-custom" />
+            </h5>
+
+            <h5 style="color:#444444">
+                End Date: <input type="date" asp-for="EndDate" class="dp-custom" />
+            </h5>
+            <input class="btn btn-primary" type="submit" value="Filter by Date" />
+        </form>
+    </div>
+
+    <div class="col-6 text-end">
+        <a class="btn btn-primary" asp-action="ExportPatrolInCouncilInExcel">Download Patrol In Council Information to Excel</a>
+    </div>
+
+</div>
+
+<br />
+<div class="table-responsive">
+    <!--Table that displays the products saved in the database-->
+    <table class="tableSlide" style="width:100%">
+        <!--Table headings-->
+        <thead>
+            <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                    Patrol In Council Date
+                </th>
+            <th style="text-align: center; vertical-align: middle;">
+                    Matters Discussed
+                </th>
+            <th style="text-align: center; vertical-align: middle;">
+                    Patrol In Council Description
+                </th>
+            <th style="text-align: center; vertical-align: middle;">
+                    Attendance
+                </th>
+            @*
+                <th></th>*@
+            </tr>
+        </thead>
+        @if (Model != null && Model.PatrolInCouncils != null && Model.PatrolInCouncils.Any())
+        {
+        <!--Table body-->
+        <tbody>
+        @foreach (var pic in Model.PatrolInCouncils)
+        {
+                    <tr>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @pic.PICDateStr
+                        </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @pic.PICPoints
+                        </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @pic.PICDescription
+                        </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @pic.PICAttendance
+                        </td>
+                    </tr>
+        }
+        </tbody>
+
+        }
+        else
+        {
+        <tr>
+            <td style="text-align: center; vertical-align: middle;" colspan="7">No Patrol In Councils Saved</td>
+        </tr>
+        }
+    </table>
+    </div>
+
+<br />
+<br />
+<br />
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust3">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/pic-removebg-preview.png" alt="Image of PIC">
+                        <div class="cap">
+                            Image Ref: Lisitsaimage, 2017
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,111 @@
+﻿@model ApplicationUser
+
+<!--Creates form for the user to remove the relevant information-->
+<form method="post" asp-action="Edit">
+	
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Update Scout's Details</h2>
+			<hr />
+		</div>
+
+	<!--Displays the information that the user has saved regarding the Product-->
+	<div class="mb-3">
+		<label asp-for="FirstName">First Name</label>
+		<input asp-for="FirstName" disabled class="form-control" />
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="LastName">Last Name</label>
+		<input asp-for="LastName" disabled class="form-control" />
+	</div>
+
+
+	<div class="mb-3">
+		<label asp-for="Birthday">Birthday</label>
+		<input type="date" name="birthday" class="form-control" asp-for="Birthday" />
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="CellNumber">Cellphone Number</label>
+		<input type="number" name="cellNumber" class="form-control" asp-for="CellNumber" />
+	</div>
+
+		<div class="mb-3">
+		<label asp-for="PatrolJob">Patrol Job *</label>
+		<!--Html.DropDownList("PatrolJobsSelected", ViewBag.PatrolJobDropDown as List<SelectListItem>, "-- Select Patrol Job --", new { class = "form-control" })-->
+			@Html.DropDownListFor(m => m.PatrolJob,  ViewBag.PatrolJobDropDown as List<SelectListItem>,"-- Select Patrol Job --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.PatrolJob, "", new { @class = "text-danger" })
+	</div>
+
+	<div class="mb-3">
+		<label asp-for="CurrentAdvancementAchieved">Current Advancement Achieved *</label>
+		<!--Html.DropDownList("PatrolJobsSelected", ViewBag.PatrolJobDropDown as List<SelectListItem>, "-- Select Patrol Job --", new { class = "form-control" })-->
+			@Html.DropDownListFor(m => m.CurrentAdvancementAchieved,  ViewBag.AdvancementBadges as List<SelectListItem>,"-- Select Advancement Level --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.CurrentAdvancementAchieved, "", new { @class = "text-danger" })
+	</div>
+
+
+	<div class="form-group">
+		<label asp-for="HasAttendedTraining">Has Attended LDC/PLTC/PLTU/Similar Training Course? *</label>
+			@Html.DropDownList("HasAttendedTraining", ViewBag.BoolDropDown as List<SelectListItem>, "-- Select an Option --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.HasAttendedTraining, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<div class="form-group">
+		<label asp-for="NumTravellerTheme">Traveller Theme Badges *</label>
+			@Html.DropDownList("NumTravellerTheme", ViewBag.BadgeCount as List<SelectListItem>, "-- Select Number of Traveller Theme Badges Earned --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.NumTravellerTheme, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<div class="form-group">
+		<label asp-for="NumDiscovererTheme">Discoverer Theme Badges *</label>
+			@Html.DropDownList("NumDiscovererTheme", ViewBag.BadgeCount as List<SelectListItem>, "-- Select Number of Discoverer Theme Badges Earned --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.NumDiscovererTheme, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<div class="form-group">
+		<label asp-for="NumFirstClassTheme">First Class Theme Badges *</label>
+			@Html.DropDownList("NumFirstClassTheme", ViewBag.BadgeCount as List<SelectListItem>, "-- Select Number of First Class Theme Badges Earned --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.NumFirstClassTheme, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<div class="form-group">
+		<label asp-for="NumSpringbokTheme">Springbok Theme Badges *</label>
+			@Html.DropDownList("NumSpringbokTheme", ViewBag.BadgeCount as List<SelectListItem>, "-- Select Number of Springbok Theme Badges Earned --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.NumSpringbokTheme, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<div class="mb-3">
+		<label asp-for="HasNationalChallenge">Has earned the National Challenge Badge? *</label>
+			@Html.DropDownList("HasNationalChallenge", ViewBag.BoolDropDown as List<SelectListItem>, "-- Select an Option --", new { @class = "form-control custom-dropdown" })
+		@Html.ValidationMessageFor(model => model.HasNationalChallenge, "", new { @class = "text-danger" })
+	</div>
+
+	<br />
+
+	<!--Button that allows the user to edit teh entry in the database-->
+	<button type="submit" class="btn btn-primary" style="width:220px">Update Scout's Details</button>
+
+	<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+	<a asp-controller="MyPatrolInformation" asp-action="Index" class="btn btn-secondary" style="width:220px">Back to Patrol Information</a>
+
+
+	<br/>
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+
+		<br />
+		<br />
+	</div>
+</form>

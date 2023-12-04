@@ -1,0 +1,56 @@
+﻿@model MyPatrolLogbook.ViewModels.PatrolInCouncilListViewModel
+
+<form method="post">
+	<div class="custom-border p-3 mt-4" style="position: relative;">
+		<div class="row pb-2">
+			<!--Displays heading-->
+			<h2 style="color:#444444">Add Patrol In Council Information</h2>
+			<hr />
+		</div>
+		<!--Displays the information that the user is required to input as well as where it should be saved-->
+		<div class="mb-3">
+
+			<div class="mb-3">
+				<label asp-for="DateofPIC">Patrol In Council Date *</label>
+				<input type="date" class="form-control" asp-for="DateofPIC" />
+				<span asp-validation-for="DateofPIC" class="text-danger"></span>
+			</div>
+		</div>
+
+		<div class="mb-3">
+			<label>Patrol In Council Matters Discussed *</label>
+			<input asp-for="PointsDiscussedInPIC" class="form-control" />
+			<span asp-validation-for="PointsDiscussedInPIC" class="text-danger"></span>
+		</div>
+
+		<div class="mb-3">
+			<label>Patrol In Council Description *</label>
+			<input asp-for="DescriptionOfPIC" class="form-control" />
+			<span asp-validation-for="DescriptionOfPIC" class="text-danger"></span>
+		</div>
+
+		<label>Attendance *</label>
+		<br />
+		@foreach (var option in ViewBag.CheckboxOptions)
+		{
+			<label>
+				<input type="checkbox" name="AttendanceAtPIC" value="@option" class="form-check-input" />
+				@option
+			</label>
+
+			<br />
+		}
+
+		<br />
+
+		<!--Button that allows the user to add teh entry to the database-->
+		<button type="submit" class="btn btn-primary" style="width:280px">Save Patrol In Council Information</button>
+
+		<!--Anchor Tag that redirects the user to a new page if it's been clicked-->
+		<a asp-controller="PatrolInCouncil" asp-action="Index" class="btn btn-secondary" style="width:280px">
+			Back to List of Patrol In Councils
+		</a>
+
+		<img src="/img/orb4.png" alt="Image of Orbs" class="img-fluid" style="position: absolute; bottom: 0; right: 0;">
+	</div>
+</form>

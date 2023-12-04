@@ -1,0 +1,120 @@
+﻿<!--Points to the viewmodel class-->
+@model MyPatrolLogbook.ViewModels.CurrentTroopScouterListViewModel
+
+<br />
+
+<div class="row pt-4">
+    
+    <div class="col-6 text-start">
+        <h3 style="color:#444444">List of Current Troop Scouters in your Province</h3>
+        <br/>
+        <form>
+            <p>
+                <input class="searchBarTS" type="text" asp-for="SearchStringTSName" placeholder="Search for a specific Troop Scouter by name" />
+                <input class="btn btn-primary" type="submit" value="Search" />
+            </p>
+        </form>
+    </div>
+
+    <div class="col-6 text-end">
+
+        <form method="post">
+            @Html.DropDownList("TroopList", ViewBag.troopList as SelectList, "Select a Troop", new { @class = "custom-dropdown-ts cdt" })
+
+            <input class="btn btn-primary" type="submit" value="Filter by Patrol" />
+
+        </form>
+        <br />
+        <h4>@ViewData["filterByTS"]</h4>
+    </div>
+</div>
+
+<br />
+<div class="table-responsive">
+<!--Table that displays the products saved in the database-->
+<table class="tableSlide2" style="width:100%">
+    <!--Table headings-->
+    <thead>
+        <tr>
+            <th style="text-align: center; vertical-align: middle;">
+                SSA ID
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Troop Scouter Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Troop Name
+            </th>
+            <th style="text-align: center; vertical-align: middle;">
+                Email
+            </th>
+
+            <th style="text-align: center; vertical-align: middle;"></th>
+        </tr>
+    </thead>
+
+    @if (Model != null && Model.CurrentTroopScouters != null && Model.CurrentTroopScouters.Any())
+        {
+    <!--Table body-->
+    <tbody>
+        @foreach (var user in Model.CurrentTroopScouters)
+        {
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">@user.SSAID</td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @user.FirstName
+                    @user.LastName
+                </td>
+                    <td style="text-align: center; vertical-align: middle;">
+                    @foreach (var troop in Model.Troops)
+                    {
+                        @if (user.TroopId == troop.TroopId.ToString())
+                        {
+                            @troop.TroopName
+                        }
+                    }
+                    </td>
+                    <td style="text-align: center; vertical-align: middle;">@user.Email</td>
+                    
+                        <td width="10%" style="text-align: center; vertical-align: middle;">
+                        
+                    <!--Anchor Tags that redirects the user to a new page if it's been clicked-->
+                    <div class="w-75 btn-group" role="group">
+                       
+                        <a asp-controller="CurrentTroopScouter" asp-action="Delete" asp-route-id="@user.Id"
+                       class="btn btn-danger"> <i class="bi bi-trash-fill"></i> Remove</a>
+                    </div>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+    }
+    else
+    {
+        <tr>
+            <td style="text-align: center; vertical-align: middle;" colspan="5">No Troop Scouters In Selected Troop. Please Filter by Another Troop.</td>
+        </tr>
+    }
+</table>
+</div>
+
+<br />
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <td>
+                <div class="image-container-cust2">
+                    <!-- Your images here -->
+                    <div class="imageRef">
+                        <img src="/img/currenttscropped.png" alt="Image of Current Troop Scouters">
+                        <div class="cap">
+                            Image Ref: Zuperial, n.d.
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
